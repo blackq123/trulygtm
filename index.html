@@ -69,34 +69,31 @@
 
         <!-- Hero collage -->
         <div class="hero-visual">
-          <!-- Big arch shape behind -->
-          <div style="position: absolute; inset: 0; background: var(--accent); border: 2px solid var(--border); border-top-left-radius: 50% 60%; border-top-right-radius: 50% 60%; border-bottom-left-radius: 24px; border-bottom-right-radius: 24px; box-shadow: 8px 8px 0 0 var(--border);"></div>
-
-          <!-- Floating tile 1: search query -->
-          <div class="collage-tile" style="top: 18%; left: -8%; width: 60%; transform: rotate(-3deg);">
-            <div style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted-fg); margin-bottom: 8px;">ChatGPT asks</div>
-            <div style="font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 1.05rem;">"Best cold email tool for B2B SaaS?"</div>
-            <div style="display: inline-flex; align-items: center; gap: 6px; margin-top: 12px; font-size: 0.8rem; font-weight: 600; color: var(--quaternary);">
-              <span style="width: 8px; height: 8px; background: var(--quaternary); border-radius: 50%;"></span>
+          <!-- Tile 1: ChatGPT search query -->
+          <div class="hero-tile hero-tile-1">
+            <div class="hero-tile-eyebrow">ChatGPT asks</div>
+            <div class="hero-tile-q">"Best cold email tool for B2B SaaS?"</div>
+            <div class="hero-tile-cited">
+              <span class="hero-cited-dot"></span>
               You're cited #1
             </div>
           </div>
 
-          <!-- Floating tile 2: metrics -->
-          <div class="collage-tile" style="bottom: 12%; right: -6%; width: 58%; transform: rotate(2deg); background: var(--tertiary);">
-            <div style="font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 2.4rem; line-height: 1; letter-spacing: -0.04em;">+312%</div>
-            <div style="font-size: 0.85rem; font-weight: 600; margin-top: 6px;">AI-driven traffic in 90 days</div>
-            <div style="display: flex; gap: 4px; margin-top: 14px; align-items: end; height: 28px;">
-              <span style="width: 10px; background: var(--fg); height: 30%;"></span>
-              <span style="width: 10px; background: var(--fg); height: 50%;"></span>
-              <span style="width: 10px; background: var(--fg); height: 70%;"></span>
-              <span style="width: 10px; background: var(--accent); height: 90%; border: 2px solid var(--border);"></span>
-              <span style="width: 10px; background: var(--accent); height: 100%; border: 2px solid var(--border);"></span>
+          <!-- Tile 2: Metrics -->
+          <div class="hero-tile hero-tile-2">
+            <div class="hero-tile-num">+312%</div>
+            <div class="hero-tile-label">AI-driven traffic in 90 days</div>
+            <div class="hero-tile-bars">
+              <span style="height: 30%;"></span>
+              <span style="height: 50%;"></span>
+              <span style="height: 70%;"></span>
+              <span style="height: 90%; background: var(--accent); border: 2px solid var(--border);"></span>
+              <span style="height: 100%; background: var(--accent); border: 2px solid var(--border);"></span>
             </div>
           </div>
 
           <!-- Star sticker -->
-          <div class="spin-slow" style="position: absolute; top: -16px; right: 22%; width: 80px; height: 80px;">
+          <div class="hero-star spin-slow">
             <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
               <path d="M40 4 L46 28 L70 22 L52 40 L70 58 L46 52 L40 76 L34 52 L10 58 L28 40 L10 22 L34 28 Z" fill="#0EA5E9" stroke="#0F172A" stroke-width="2.5" stroke-linejoin="round"/>
             </svg>
