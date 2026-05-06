@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>trulygtm — logo D variants</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body { padding: 64px 24px; }
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+      max-width: 1200px;
+      margin: 48px auto;
+    }
+    .logo-card {
+      background: var(--card);
+      border: 2px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: 40px 28px;
+      box-shadow: var(--pop-lg);
+      text-align: center;
+    }
+    .logo-card.dark { background: var(--fg); color: var(--bg); }
+    .logo-card.dark h4 { color: var(--bg); }
+    .logo-card.dark p { color: rgba(255, 251, 242, 0.65); }
+    .stage {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 180px;
+      margin-bottom: 20px;
+    }
+    .logo-card h4 { margin-bottom: 8px; }
+    .logo-card p { color: var(--muted-fg); font-size: 0.88rem; line-height: 1.5; }
+    .scale-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 2px dashed var(--border);
+    }
+    .logo-card.dark .scale-row { border-top-color: rgba(255, 251, 242, 0.2); }
+    .wordmark {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 900;
+      font-size: 1.4rem;
+      letter-spacing: -0.03em;
+    }
+    h1 { text-align: center; margin-bottom: 16px; }
+    .intro { text-align: center; max-width: 640px; margin: 0 auto 16px; color: var(--muted-fg); }
+  </style>
+</head>
+<body>
+
+  <h1>4 takes on <span class="squig">two equal circles</span></h1>
+  <p class="intro">Same idea — T circle + G circle, equal size, overlapping in the middle. Different details. Pick which feels right.</p>
+
+  <div class="logo-grid">
+
+    <!-- D1 -->
+    <div class="logo-card">
+      <div class="stage">
+        <svg width="180" height="100" viewBox="0 0 180 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="110" cy="50" r="40" fill="#0EA5E9" stroke="#0F172A" stroke-width="4"/>
+          <circle cx="70" cy="50" r="40" fill="#FF5C39" stroke="#0F172A" stroke-width="4"/>
+          <rect x="50" y="32" width="40" height="10" rx="2" fill="#FFFBF2"/>
+          <rect x="65" y="32" width="10" height="36" rx="2" fill="#FFFBF2"/>
+          <circle cx="110" cy="50" r="14" fill="none" stroke="#FFFBF2" stroke-width="6"/>
+          <rect x="110" y="48" width="10" height="6" fill="#FFFBF2"/>
+        </svg>
+      </div>
+      <h4>D1. Coral T + Sky G</h4>
+      <p>The default — coral circle with the T overlapping a sky circle with the G. Both brand colors, equal size and weight.</p>
+      <div class="scale-row">
+        <svg width="48" height="28" viewBox="0 0 180 100">
+          <circle cx="110" cy="50" r="40" fill="#0EA5E9" stroke="#0F172A" stroke-width="4"/>
+          <circle cx="70" cy="50" r="40" fill="#FF5C39" stroke="#0F172A" stroke-width="4"/>
+          <rect x="50" y="32" width="40" height="10" rx="2" fill="#FFFBF2"/>
+          <rect x="65" y="32" width="10" height="36" rx="2" fill="#FFFBF2"/>
+          <circle cx="110" cy="50" r="14" fill="none" stroke="#FFFBF2" stroke-width="6"/>
+          <rect x="110" y="48" width="10" height="6" fill="#FFFBF2"/>
+        </svg>
+        <span class="wordmark">
+          <svg width="40" height="24" viewBox="0 0 180 100">
+            <circle cx="110" cy="50" r="40" fill="#0EA5E9" stroke="#0F172A" stroke-width="4"/>
+            <circle cx="70" cy="50" r="40" fill="#FF5C39" stroke="#0F172A" stroke-width="4"/>
+            <rect x="50" y="32" width="40" height="10" rx="2" fill="#FFFBF2"/>
+            <rect x="65" y="32" width="10" height="36" rx="2" fill="#FFFBF2"/>
+            <circle cx="110" cy="50" r="14" fill="none" stroke="#FFFBF2" stroke-width="6"/>
+            <rect x="110" y="48" width="10" height="6" fill="#FFFBF2"/>
+          </svg>
+          trulygtm<span style="color: #FF5C39;">.</span>
+        </span>
+      </div>
+    </div>
+
+    <!-- D2 -->
+    <div class="logo-card">
+      <div class="stage">
+        <svg width="180" height="100" viewBox="0 0 180 100" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="left-clip-d2">
+              <circle cx="70" cy="50" r="40"/>
+            </clipPath>
+          </defs>
+          <circle cx="70" cy="50" r="40" fill="#FF5C39" stroke="#0F172A" stroke-width="4"/>
+          <circle cx="110" cy="50" r="40" fill="#0EA5E9" stroke="#0F172A" stroke-width="4"/>
+          <g clip-path="url(#left-clip-d2)">
+            <circle cx="110" cy="50" r="40" fill="#FACC15" stroke="#0F172A" stroke-width="4"/>
+          </g>
+          <rect x="50" y="32" width="40" height="10" rx="2" fill="#FFFBF2"/>
+          <rect x="65" y="32" width="10" height="36" rx="2" fill="#FFFBF2"/>
+          <circle cx="110" cy="50" r="14" fill="none" stroke="#FFFBF2" stroke-width="6"/>
+          <rect x="110" y="48" width="10" height="6" fill="#FFFBF2"/>
+        </svg>
+      </div>
+      <h4>D2. Yellow overlap</h4>
+      <p>Same as D1 but the intersection area turns yellow — the third brand color shows up exactly where the circles meet.</p>
+      <div class="scale-row">
+        <svg width="48" height="28" viewBox="0 0 180 100">
+          <defs>
+            <clipPath id="lc-mini-d2"><circle cx="70" cy="50" r="40"/></clipPath>
+          </defs>
+          <circle cx="70" cy="50" r="40" fill="#FF5C39" stroke="#0F172A" stroke-width="4"/>
+          <circle cx="110" cy="50" r="40" fill="#0EA5E9" stroke="#0F172A" stroke-width="4"/>
+          <g clip-path="url(#lc-mini-d2)">
+            <circle cx="110" cy="50" r="40" fill="#FACC15" stroke="#0F172A" stroke-width="4"/>
+          </g>
+          <rect x="50" y="32" width="40" height="10" rx="2" fill="#FFFBF2"/>
+          <rect x="65" y="32" width="10" height="36" rx="2" fill="#FFFBF2"/>
+          <circle cx="110" cy="50" r="14" fill="none" stroke="#FFFBF2" stroke-width="6"/>
+          <rect x="110" y="48" width="10" height="6" fill="#FFFBF2"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- D3 -->
+    <div class="logo-card">
+      <div class="stage">
+        <svg width="180" height="100" viewBox="0 0 180 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="70" cy="50" r="40" fill="#FFFBF2" stroke="#0F172A" stroke-width="5"/>
+          <circle cx="110" cy="50" r="40" fill="#FFFBF2" stroke="#0F172A" stroke-width="5"/>
+          <rect x="48" y="34" width="44" height="10" rx="2" fill="#0F172A"/>
+          <rect x="65" y="34" width="10" height="34" rx="2" fill="#0F172A"/>
+          <circle cx="110" cy="50" r="14" fill="none" stroke="#0F172A" stroke-width="6"/>
+          <rect x="110" y="48" width="10" height="6" fill="#0F172A"/>
+        </svg>
+      </div>
+      <h4>D3. Outline only</h4>
+      <p>Stripped down. Just two outlined circles + dark glyphs. Single-color logo that works on any background.</p>
+      <div class="scale-row">
+        <svg width="48" height="28" viewBox="0 0 180 100">
+          <circle cx="70" cy="50" r="40" fill="#FFFBF2" stroke="#0F172A" stroke-width="5"/>
+          <circle cx="110" cy="50" r="40" fill="#FFFBF2" stroke="#0F172A" stroke-width="5"/>
+          <rect x="48" y="34" width="44" height="10" rx="2" fill="#0F172A"/>
+          <rect x="65" y="34" width="10" height="34" rx="2" fill="#0F172A"/>
+          <circle cx="110" cy="50" r="14" fill="none" stroke="#0F172A" stroke-width="6"/>
+          <rect x="110" y="48" width="10" height="6" fill="#0F172A"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- D4 -->
+    <div class="logo-card dark">
+      <div class="stage">
+        <svg width="180" height="100" viewBox="0 0 180 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="110" cy="50" r="40" fill="#FACC15" stroke="#FFFBF2" stroke-width="4"/>
+          <circle cx="70" cy="50" r="40" fill="#FF5C39" stroke="#FFFBF2" stroke-width="4"/>
+          <rect x="50" y="32" width="40" height="10" rx="2" fill="#0F172A"/>
+          <rect x="65" y="32" width="10" height="36" rx="2" fill="#0F172A"/>
+          <circle cx="110" cy="50" r="14" fill="none" stroke="#0F172A" stroke-width="6"/>
+          <rect x="110" y="48" width="10" height="6" fill="#0F172A"/>
+        </svg>
+      </div>
+      <h4>D4. Dark-bg variant</h4>
+      <p>Same construction with yellow G circle + cream borders. Designed for the footer / dark sections of the site.</p>
+      <div class="scale-row">
+        <svg width="48" height="28" viewBox="0 0 180 100">
+          <circle cx="110" cy="50" r="40" fill="#FACC15" stroke="#FFFBF2" stroke-width="4"/>
+          <circle cx="70" cy="50" r="40" fill="#FF5C39" stroke="#FFFBF2" stroke-width="4"/>
+          <rect x="50" y="32" width="40" height="10" rx="2" fill="#0F172A"/>
+          <rect x="65" y="32" width="10" height="36" rx="2" fill="#0F172A"/>
+          <circle cx="110" cy="50" r="14" fill="none" stroke="#0F172A" stroke-width="6"/>
+          <rect x="110" y="48" width="10" height="6" fill="#0F172A"/>
+        </svg>
+      </div>
+    </div>
+
+  </div>
+
+  <p style="text-align: center; max-width: 600px; margin: 48px auto 0; color: var(--muted-fg);">Tell me which one — D1, D2, D3, or D4 — and I'll wire it into every page + generate a favicon.</p>
+
+</body>
+</html>

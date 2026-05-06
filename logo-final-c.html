@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>trulygtm — logo C v3 (G fixed)</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body { padding: 64px 24px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; max-width: 1200px; margin: 48px auto; }
+    .card-show { background: var(--card); border: 2px solid var(--border); border-radius: var(--r-lg); padding: 48px 32px; box-shadow: var(--pop-lg); text-align: center; }
+    .card-show.dark { background: var(--fg); color: var(--bg); }
+    .card-show.dark h4 { color: var(--bg); }
+    .card-show.dark p { color: rgba(255, 251, 242, 0.65); }
+    .card-show.cream { background: var(--bg); }
+    .stage { display: flex; align-items: center; justify-content: center; min-height: 160px; margin-bottom: 24px; }
+    h4 { margin-bottom: 8px; }
+    p.tag { color: var(--muted-fg); font-size: 0.88rem; line-height: 1.5; }
+    .scale-row { display: flex; align-items: center; justify-content: center; gap: 28px; margin-top: 24px; padding-top: 20px; border-top: 2px dashed var(--border); }
+    .card-show.dark .scale-row { border-top-color: rgba(255, 251, 242, 0.2); }
+    .wordmark { display: inline-flex; align-items: center; gap: 10px; font-family: 'Outfit', sans-serif; font-weight: 900; font-size: 1.4rem; letter-spacing: -0.03em; }
+    h1 { text-align: center; }
+    .intro { text-align: center; max-width: 640px; margin: 0 auto 16px; color: var(--muted-fg); }
+  </style>
+</head>
+<body>
+
+  <h1>Logo C — <span class="squig">G now matches T's scale</span></h1>
+  <p class="intro">G glyph rebuilt to fill its circle the same way T fills its circle. Both letters now have equal visual weight inside their respective discs.</p>
+
+  <div class="grid">
+
+    <div class="card-show cream">
+      <div class="stage">
+        <svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="125" cy="50" r="40" fill="#FFFBF2" stroke="#0F172A" stroke-width="3.5"/>
+          <circle cx="75" cy="50" r="40" fill="#FF5C39" stroke="#0F172A" stroke-width="3.5"/>
+          <rect x="55" y="32" width="40" height="10" rx="2" fill="#FFFBF2"/>
+          <rect x="70" y="32" width="10" height="36" rx="2" fill="#FFFBF2"/>
+          <path d="M 145 41 A 22 22 0 1 0 145 59 L 132 59 L 132 51 L 140 51" fill="none" stroke="#FF5C39" stroke-width="9" stroke-linejoin="round" stroke-linecap="square"/>
+        </svg>
+      </div>
+      <h4>On cream</h4>
+      <p class="tag">G is now built as a thick C-shape with a tongue, matching the T's bold weight inside its circle.</p>
+      <div class="scale-row">
+        <svg width="48" height="24" viewBox="0 0 200 100">
+          <circle cx="125" cy="50" r="40" fill="#FFFBF2" stroke="#0F172A" stroke-width="3.5"/>
+          <circle cx="75" cy="50" r="40" fill="#FF5C39" stroke="#0F172A" stroke-width="3.5"/>
+          <rect x="55" y="32" width="40" height="10" rx="2" fill="#FFFBF2"/>
+          <rect x="70" y="32" width="10" height="36" rx="2" fill="#FFFBF2"/>
+          <path d="M 145 41 A 22 22 0 1 0 145 59 L 132 59 L 132 51 L 140 51" fill="none" stroke="#FF5C39" stroke-width="9" stroke-linejoin="round" stroke-linecap="square"/>
+        </svg>
+        <span class="wordmark">
+          <svg width="40" height="20" viewBox="0 0 200 100">
+            <circle cx="125" cy="50" r="40" fill="#FFFBF2" stroke="#0F172A" stroke-width="3.5"/>
+            <circle cx="75" cy="50" r="40" fill="#FF5C39" stroke="#0F172A" stroke-width="3.5"/>
+            <rect x="55" y="32" width="40" height="10" rx="2" fill="#FFFBF2"/>
+            <rect x="70" y="32" width="10" height="36" rx="2" fill="#FFFBF2"/>
+            <path d="M 145 41 A 22 22 0 1 0 145 59 L 132 59 L 132 51 L 140 51" fill="none" stroke="#FF5C39" stroke-width="9" stroke-linejoin="round" stroke-linecap="square"/>
+          </svg>
+          trulygtm<span style="color: #FF5C39;">.</span>
+        </span>
+      </div>
+    </div>
+
+    <div class="card-show">
+      <div class="stage">
+        <svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="125" cy="50" r="40" fill="#FFFFFF" stroke="#0F172A" stroke-width="3.5"/>
+          <circle cx="75" cy="50" r="40" fill="#FF5C39" stroke="#0F172A" stroke-width="3.5"/>
+          <rect x="55" y="32" width="40" height="10" rx="2" fill="#FFFFFF"/>
+          <rect x="70" y="32" width="10" height="36" rx="2" fill="#FFFFFF"/>
+          <path d="M 145 41 A 22 22 0 1 0 145 59 L 132 59 L 132 51 L 140 51" fill="none" stroke="#FF5C39" stroke-width="9" stroke-linejoin="round" stroke-linecap="square"/>
+        </svg>
+      </div>
+      <h4>On white</h4>
+      <p class="tag">G fills the circle with the same density as T fills its own.</p>
+    </div>
+
+    <div class="card-show dark">
+      <div class="stage">
+        <svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="125" cy="50" r="40" fill="#0F172A" stroke="#FFFBF2" stroke-width="3.5"/>
+          <circle cx="75" cy="50" r="40" fill="#FF5C39" stroke="#FFFBF2" stroke-width="3.5"/>
+          <rect x="55" y="32" width="40" height="10" rx="2" fill="#0F172A"/>
+          <rect x="70" y="32" width="10" height="36" rx="2" fill="#0F172A"/>
+          <path d="M 145 41 A 22 22 0 1 0 145 59 L 132 59 L 132 51 L 140 51" fill="none" stroke="#FF5C39" stroke-width="9" stroke-linejoin="round" stroke-linecap="square"/>
+        </svg>
+      </div>
+      <h4>On dark</h4>
+      <p class="tag">Cream borders + slate fill + coral letters. Footer variant.</p>
+    </div>
+
+  </div>
+
+  <p style="text-align: center; max-width: 600px; margin: 64px auto 0; color: var(--muted-fg);">If this matches what you wanted, say "ship it" and I'll wire it into all 8 pages + create the favicon.</p>
+
+</body>
+</html>
